@@ -34,6 +34,7 @@ public class Temperature {
             if (numbers[i] < minValue) {
                 minValue = numbers[i];
                 System.out.println(minValue);
+
             }
         }
     }

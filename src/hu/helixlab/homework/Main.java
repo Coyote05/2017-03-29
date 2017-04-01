@@ -34,6 +34,7 @@ public class Main {
         temperature.printLowestTemperature();
         temperature.printHighestTemperature();
 
+
     }
 
 }
