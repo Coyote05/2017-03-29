@@ -1,5 +1,6 @@
 package hu.helixlab.homework;
 
+import homework03.PasswordGenerator;
 import homework03.User;
 import homework03.Temperature;
 import java.util.Random;
@@ -25,8 +26,14 @@ public class Main {
             System.out.println(new User("Bela"+i).toString());
         }
 */
-
         System.out.println("Első feladat");
+        PasswordGenerator passwordGenerator = new PasswordGenerator();
+        System.out.println("\t" + passwordGenerator.generatePassword());
+
+
+
+
+        System.out.println("Negyedik feladat");
 
         Temperature temperature = new Temperature();
 
