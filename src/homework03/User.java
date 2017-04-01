@@ -8,6 +8,7 @@ public class User {
     private String password;
 
     Random random = new Random();
+    PasswordGenerator passwordGenerator = new PasswordGenerator();
 
     public User(){
     }
@@ -16,9 +17,8 @@ public class User {
         Random random = new Random();
         this.username = username;
         this.id = random.nextInt();
-        this.password = id + username + id;
+        this.password = passwordGenerator.generatePassword();
     }
-
 
     public int getId(){
         return id;

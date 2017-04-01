@@ -8,7 +8,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-/*
+
         String base = new String("base");
 
         Random generator = new Random();
@@ -25,11 +25,13 @@ public class Main {
         for(int i=1; i < 20; ++i){
             System.out.println(new User("Bela"+i).toString());
         }
-*/
+        System.out.println();
         System.out.println("Első feladat");
         PasswordGenerator passwordGenerator = new PasswordGenerator();
         System.out.println("\t" + passwordGenerator.generatePassword());
 
+        System.out.println();
+        System.out.println("Második feladat");                  //Kicserélve a régi jelszó (id+Username+id)
 
 
 
