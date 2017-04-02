@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class Temperature {
 
+    int minValue;
+    int maxValue;
+
     public void getTemperatureDataFromConsole() {
 
         Scanner scanner = new Scanner(System.in);
 
         int[] numbers = new int[10];
         int i;
-        int minValue;
-        int maxValue;
 
         for (i = 0; i < numbers.length; i++) {
             System.out.println("Add meg a következő hőmérsékletet!");
@@ -33,14 +34,13 @@ public class Temperature {
         }
         System.out.println(maxValue);
     }
-    public void printLowestTemperature() {
-
-        System.out.println("A legalacsonyabb hőmérséklet: ");
-    }
-
     public void printHighestTemperature() {
 
-        System.out.println("A legmagasabb hőmérséklet: ");
+        System.out.println("A legmagasabb hőmérséklet: " + maxValue);
+    }
+    public void printLowestTemperature() {
+
+        System.out.println("A legalacsonyabb hőmérséklet: " + minValue);
     }
 }
 

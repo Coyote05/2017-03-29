@@ -25,8 +25,8 @@ public class Main {
         System.out.println(user1.toString());
 
         Random random = new Random();
-        for(int i=1; i < 20; ++i){
-            System.out.println(new User("Bela"+i).toString());
+        for (int i = 1; i < 20; ++i) {
+            System.out.println(new User("Bela" + i).toString());
         }
         System.out.println();
         System.out.println("Első feladat");
@@ -41,17 +41,12 @@ public class Main {
         Game game = new Game();
         game.playBarchobaWithNumbers();
 
-
-
+        System.out.println();
         System.out.println("Negyedik feladat");
-
         Temperature temperature = new Temperature();
-
         temperature.getTemperatureDataFromConsole();
-        temperature.printLowestTemperature();
         temperature.printHighestTemperature();
-
+        temperature.printLowestTemperature();
     }
-
 }
 
