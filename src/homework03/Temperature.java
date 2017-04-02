@@ -8,34 +8,39 @@ public class Temperature {
 
         Scanner scanner = new Scanner(System.in);
 
-        int[] numbers = new int[3];
+        int[] numbers = new int[10];
+        int i;
+        int minValue;
+        int maxValue;
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (i = 0; i < numbers.length; i++) {
             System.out.println("Add meg a következő hőmérsékletet!");
             numbers[i] = scanner.nextInt();
         }
-    }
 
-    public void printHighestTemperature(int[] numbers) {
-
-        int maxValue = numbers[0];
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] > maxValue) {
-                maxValue = numbers[i];
-                System.out.println(maxValue);
-            }
-        }
-    }
-
-    public void printLowestTemperature(int[] numbers) {
-
-        int minValue = numbers[0];
-        for (int i = 1; i < numbers.length; i++) {
+        minValue = numbers[0];
+        for (i = 1; i < numbers.length; i++) {
             if (numbers[i] < minValue) {
                 minValue = numbers[i];
-                System.out.println(minValue);
             }
         }
+
+        maxValue = numbers[0];
+        for (i = 1; i < numbers.length; i++) {
+            if (numbers[i] > maxValue) {
+                maxValue = numbers[i];
+            }
+        }
+        System.out.println(maxValue);
+    }
+    public void printLowestTemperature() {
+
+        System.out.println("A legalacsonyabb hőmérséklet: ");
+    }
+
+    public void printHighestTemperature() {
+
+        System.out.println("A legmagasabb hőmérséklet: ");
     }
 }
 

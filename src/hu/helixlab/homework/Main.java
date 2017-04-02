@@ -47,9 +47,9 @@ public class Main {
 
         Temperature temperature = new Temperature();
 
-        //temperature.getTemperatureDataFromConsole();
-        //temperature.printLowestTemperature();
-        //temperature.printHighestTemperature();
+        temperature.getTemperatureDataFromConsole();
+        temperature.printLowestTemperature();
+        temperature.printHighestTemperature();
 
     }
 
