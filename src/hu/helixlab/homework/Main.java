@@ -1,8 +1,11 @@
 package hu.helixlab.homework;
 
+import homework03.Game;
 import homework03.PasswordGenerator;
 import homework03.User;
 import homework03.Temperature;
+
+import javax.management.monitor.GaugeMonitor;
 import java.util.Random;
 
 public class Main {
@@ -32,6 +35,11 @@ public class Main {
 
         System.out.println();
         System.out.println("Második feladat");                  //Kicserélve a régi jelszó (id+Username+id)
+
+        System.out.println();
+        System.out.println("Harmadik feladat");
+        Game game = new Game();
+        game.playBarchobaWithNumbers();
 
 
 
