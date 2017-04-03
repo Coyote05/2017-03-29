@@ -31,7 +31,7 @@ public class Main {
         System.out.println();
         System.out.println("Első feladat");
         PasswordGenerator passwordGenerator = new PasswordGenerator();
-        System.out.println("\t" + passwordGenerator.generatePassword());
+        System.out.println("\t" + passwordGenerator.generatePassword(8));
 
         System.out.println();
         System.out.println("Második feladat");                  //Kicserélve a régi jelszó (id+Username+id)
